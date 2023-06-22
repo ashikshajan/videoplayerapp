@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810119696956",
+    "project_id": "videoplayerapp-90ce3",
+    "storage_bucket": "videoplayerapp-90ce3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810119696956:android:7a075512bb847ff54ee939",
+        "android_client_info": {
+          "package_name": "com.playvideo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810119696956-k9uovj8iu76sqvs1arem177c0acm4pa2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playvideo.app",
+            "certificate_hash": "8ebbd1318813d1c36b20677543632e21a4674334"
+          }
+        },
+        {
+          "client_id": "810119696956-7950m87th58ukcpstqn32vlvih2hpfqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1TMe3wySy5pplw0HjUXrOvAhh8qoQDhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810119696956-7950m87th58ukcpstqn32vlvih2hpfqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
