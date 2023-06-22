@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:no_screenshot/no_screenshot.dart';
 
 class DashbrdController extends GetxController {
-  final noScreenshot = NoScreenshot.instance;
   ThemeMode themeModee = ThemeMode.system;
   void changeTheme(ThemeMode themeMode) {
     themeModee = themeMode;
@@ -12,6 +11,7 @@ class DashbrdController extends GetxController {
   }
 
   Future<void> preventScreenshots() async {
+    final noScreenshot = NoScreenshot.instance;
     await noScreenshot.screenshotOff();
     update();
   }

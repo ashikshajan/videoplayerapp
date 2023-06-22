@@ -100,6 +100,7 @@ class DashboardScreen extends StatelessWidget {
                       ),
                 InkWell(
                   onTap: () async {
+                    await videocontroller.closescreenvisibility();
                     await SharedPrefsUtil.remove(SharedPrefsUtil.login);
                     Get.offAll(const Splash());
                   },
