@@ -13,8 +13,6 @@ class CommonUtilities {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: TextFormField(
-            autofocus: false,
-            enabled: true,
             keyboardType: keyboardType,
             inputFormatters: <TextInputFormatter>[
               FilteringTextInputFormatter.digitsOnly

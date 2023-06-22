@@ -17,9 +17,12 @@ class Login extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Login Now",
-                      style: CommonUtilities.dashboardtxt,
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white),
                     ),
                     Image(
                         height: Get.height / 3,
@@ -43,8 +46,14 @@ class Login extends StatelessWidget {
                         logincontroller.isLoading.isFalse)
                       CommonUtilities.button(
                           CommonUtilities.primaryclr, "Sent OTP", () async {
-                        if (logincontroller.userctrl.text.isNotEmpty) {
+                        if (logincontroller.userctrl.text.isNotEmpty &&
+                            logincontroller.userctrl.text.length == 10) {
                           await logincontroller.verifyPhoneNumber();
+                        } else {
+                          Get.snackbar("Error", "Enter Valid Number",
+                              colorText: Colors.black,
+                              backgroundColor: Colors.white,
+                              snackPosition: SnackPosition.BOTTOM);
                         }
                       }, const TextStyle(fontSize: 22, color: Colors.white)),
                     if (logincontroller.otpvisible.value == true &&

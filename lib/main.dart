@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<DashbrdController>(builder: (controller) {
-      dashbrdcontroller.preventScreenshots();
+      //   dashbrdcontroller.preventScreenshots();
 
       return GetMaterialApp(
           debugShowCheckedModeBanner: false,
